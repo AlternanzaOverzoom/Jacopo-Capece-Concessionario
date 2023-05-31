@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina login</title>
+  <link rel="icon" href="brumlogo.jpeg" type="image/x-icon">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bg-img {
+      background-image: url("sfondoLogin.jpg");
+      min-height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      margin: 20px;
+      max-width: 400px;
+      padding: 16px;
+      background-color: white;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+    .show-password-btn {
+      margin-top: 10px;
+      background-color: #ccc;
+      color: black;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-img">
+    <form action="homepage.html" class="container" method="POST">
+      <h1>Login</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="button" class="show-password-btn" onclick="togglePasswordVisibility()">Show Password</button>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+  <script> 
+  
+  
+  </script>
+
+  <script>
+    function togglePasswordVisibility() {
+      var passwordInput = document.querySelector('input[name="psw"]');
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
+    const form = document.querySelector('form');
+
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  const email = form.email.value;
+  const password = form.psw.value;
+
+
+  if (email === 'admin@gmail.com' && password === 'password') {
+
+    window.location.href = 'homepage.html';
+  } else {
+
+    alert('Nome utente o password non validi!');
+  }
+});
+  </script>
+</body>
+</html>
