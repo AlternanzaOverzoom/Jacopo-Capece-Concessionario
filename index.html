@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="rainbow.html">About</a>
   <a href="rainbow.html">Contatti</a>
   <a href="Compra.html">Compra</a>
+  <a onclick="logout()">Logout</a>
+
 </div>
-<div>
-  <button onclick="logout()">Logout</button>
-</div>
-<span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span>
 <div id="main">
 
   <head>
     <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="imgs/brumlogo.jpeg" type="image/x-icon">
   </head>
 
   <body>
     <header style="background-color: rgb(123, 45, 67); color: #fff;">
       <h1>Benvenuto sull'homepage del concessionario: Carroziere</h1>
+      <span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span>
     </header>
     <section>
       <div class="slideshow-container">
@@ -43,8 +41,6 @@
           <img src="imgs/Concess3.jpg" style="width:100%">
           <div class="text">Le nostre auto</div>
         </div>
-
-
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
