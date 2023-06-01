@@ -14,7 +14,7 @@ Al momento della stesura di questa README il sito è composto da 4 pagine web: u
 
 ## Utilizzo
 
-Al momento della stesura di questa README sul sito si può accedere con l'email admin@gmail.it e con la password: password
+Al momento della stesura di questa README sul sito si può accedere con l'email admin@gmail.com e con la password: password
 
 ## Contatti
 
