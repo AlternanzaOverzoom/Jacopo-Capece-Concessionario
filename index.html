@@ -351,9 +351,13 @@
       </script>
       <script>
         function logout() {
-          localStorage.setItem("isLoggedIn", false);
+          localStorage.removeItem('isLoggedIn');
           alert("Logout effettuato con successo!");
+          location.reload();
         }
+
+
+
       </script>
       <footer style="background-color: rgb(123, 45, 67); color: #fff;">
         <p>&copy; 2023. Tutti i diritti riservati a me.</p>
