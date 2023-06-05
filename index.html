@@ -2,6 +2,7 @@
 <html>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <input type="text" name="search" placeholder="Cerca..">
   <a href="rainbow.html">About</a>
   <a href="rainbow.html">Contatti</a>
   <a href="Compra.html">Compra</a>
@@ -18,7 +19,8 @@
 
   <body bgcolor="#0000">
     <header style="background-color: #36454F; color: #fff;">
-      <h1>Benvenuto sulla homepage del concessionario: Carroziere</h1>
+      <h1>Concessionario: Carroziere</h1>
+      <h4>Se cerchi eleganza e potenza sei nel posto giusto</h4>
 
       <span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span>
     </header>
@@ -70,381 +72,395 @@
         <h1 style="color:#fff">Vieni a trovarci:</h1>
         <div class="dealer">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2297.2212743186665!2d16.29627141651323!3d41.22797800213973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1685957660976!5m2!1sit!2sit"
-            width="50%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5105.755612510018!2d72.85485672248623!3d19.100787557198185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sit!2sit!4v1685972983900!5m2!1sit!2sit"
+            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+
       </div>
 
 
-</div>
-
-
-<style>
-  .dealer {
-    background-image: url(imgs/dealership.jpg);
-  }
-
-  .map {
-
-    border-radius: 25px;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-
-  ::-webkit-scrollbar-track {
-    background: #343434;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #36454F;
-  }
-
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #28282B;
-  }
-
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-  }
-
-  button {
-    background-color: #36454F;
-    color: white;
-    border: none;
-    padding: 10px 2.3px;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background-color: white;
-    color: rgb(255, 255, 255);
-  }
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-
-  @media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-
-    .sidenav a {
-      font-size: 18px;
-    }
-  }
-
-  .btn {
-    background-color: #36454F;
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .btn:hover {
-    background-color: #343434;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-  }
-
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 50px;
-    width: 100%;
-    text-align: center;
-    border-radius: 25px;
-
-  }
-
-  h1 {
-    margin: 0;
-  }
-
-  nav {
-    background-color: #f4f4f4;
-    padding: 10px;
-  }
-
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px;
-  }
-
-  section {
-    padding: 20px;
-  }
-
-  * {
-    box-sizing: border-box
-  }
-
-
-  .slideshow-container {
-    width: 100%;
-    position: relative;
-    margin: auto;
-  }
-
-
-  .mySlides {
-    display: none;
-  }
-
-
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-
-  .prev:hover,
-  .next:hover {
-    background-color: rgb(0, 0, 0, 0.8);
-  }
-
-
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
-
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @keyframes fade {
-    from {
-      opacity: .4
-    }
-
-    to {
-      opacity: 1
-    }
-  }
-
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-
-  .fa:hover {
-    opacity: 0.7;
-  }
-
-
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-  .fa-instagram {
-    background: #FF00FF;
-    color: white;
-  }
-
-  .fa-youtube {
-    background: red;
-    color: rgb(255, 255, 255);
-  }
-
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    border-radius: 25px;
-  }
-</style>
-<script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  }
-</script>
-<script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
-</script>
-<script>
-
-  function checkLoggedIn() {
-    let isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (!isLoggedIn) {
-
-      window.location.href = "paginaLogin.html";
-    }
-  }
-
-  checkLoggedIn();
-
-
-</script>
-<script>
-  function logout() {
-    localStorage.removeItem('isLoggedIn');
-    alert("Logout effettuato con successo!");
-    location.reload();
-  }
-</script>
-<footer style="background-color: #36454F; color: #fff;">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <a href="www.facebook.com" class="fa fa-facebook"></a>
-  <a href="www.instagram.com" class="fa fa-instagram"></a>
-  <a href="www.youtube.com" class="fa fa-youtube"></a>
-  <p>&copy; 2023. Tutti i diritti riservati a me.</p>
-</footer>
-</body>
+      <style>
+        input[type=text] {
+          width: 130px;
+          -webkit-transition: width 0.4s ease-in-out;
+          transition: width 0.4s ease-in-out;
+          background-color: #111;
+        }
+
+        input[type=text]:focus {
+          width: 100%;
+          color: #f1f1f1;
+        }
+
+        .dealer {
+          background-image: url(imgs/dealership.jpg);
+        }
+
+        .map {
+
+          border-radius: 25px;
+        }
+
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+
+
+        ::-webkit-scrollbar-track {
+          background: #343434;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background: #36454F;
+        }
+
+
+        ::-webkit-scrollbar-thumb:hover {
+          background: #28282B;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          padding-top: 60px;
+          transition: 0.5s;
+        }
+
+        button {
+          background-color: #36454F;
+          color: white;
+          border: none;
+          padding: 10px 2.3px;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: white;
+          color: rgb(255, 255, 255);
+        }
+
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        #main {
+          transition: margin-left .5s;
+          padding: 20px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {
+            padding-top: 15px;
+          }
+
+          .sidenav a {
+            font-size: 18px;
+          }
+        }
+
+        .btn {
+          background-color: #36454F;
+          border: none;
+          color: white;
+          padding: 12px 16px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        .btn:hover {
+          background-color: #343434;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          padding-top: 60px;
+          transition: 0.5s;
+        }
+
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 50px;
+          width: 100%;
+          text-align: right;
+          border-radius: 25px;
+
+
+        }
+
+        h1 {
+          margin: 0;
+        }
+
+        nav {
+          background-color: #f4f4f4;
+          padding: 10px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        nav ul li {
+          display: inline;
+          margin-right: 10px;
+        }
+
+        nav ul li a {
+          text-decoration: none;
+          color: #333;
+          padding: 5px;
+        }
+
+        section {
+          padding: 20px;
+        }
+
+        * {
+          box-sizing: border-box
+        }
+
+
+        .slideshow-container {
+          width: 100%;
+          position: relative;
+          margin: auto;
+        }
+
+
+        .mySlides {
+          display: none;
+        }
+
+
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+
+
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+
+        .prev:hover,
+        .next:hover {
+          background-color: rgb(0, 0, 0, 0.8);
+        }
+
+
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+
+
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+          background-color: #717171;
+        }
+
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+          from {
+            opacity: .4
+          }
+
+          to {
+            opacity: 1
+          }
+        }
+
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+        }
+
+
+        .fa:hover {
+          opacity: 0.7;
+        }
+
+
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+
+        .fa-instagram {
+          background: #FF00FF;
+          color: white;
+        }
+
+        .fa-youtube {
+          background: red;
+          color: rgb(255, 255, 255);
+        }
+
+        footer {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+          width: 100%;
+          border-bottom-left-radius: 25px;
+          border-bottom-right-radius: 25px;
+        }
+      </style>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+      <script>
+
+        function checkLoggedIn() {
+          let isLoggedIn = localStorage.getItem("isLoggedIn");
+          if (!isLoggedIn) {
+
+            window.location.href = "paginaLogin.html";
+          }
+        }
+
+        checkLoggedIn();
+
+
+      </script>
+      <script>
+        function logout() {
+          localStorage.removeItem('isLoggedIn');
+          alert("Logout effettuato con successo!");
+          location.reload();
+        }
+      </script>
+      <footer style="background-color: #36454F; color: #fff;">
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="www.facebook.com" class="fa fa-facebook"></a>
+        <a href="www.instagram.com" class="fa fa-instagram"></a>
+        <a href="www.youtube.com" class="fa fa-youtube"></a>
+        <p>&copy; 2023. Tutti i diritti riservati a me.</p>
+      </footer>
+  </body>
 </div>
 
 </html>
