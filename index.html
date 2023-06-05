@@ -13,12 +13,13 @@
   <head>
     <title>Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="imgs/brumlogo.jpeg" type="image/x-icon">
+    <link rel="icon" href="imgs/Logo.png" type="image/x-icon">
   </head>
 
-  <body>
-    <header style="background-color: rgb(123, 45, 67); color: #fff;">
-      <h1>Benvenuto sull'homepage del concessionario: Carroziere</h1>
+  <body bgcolor="#0000">
+    <header style="background-color: #36454F; color: #fff;">
+      <h1>Benvenuto sulla homepage del concessionario: Carroziere</h1>
+
       <span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span>
     </header>
     <section>
@@ -52,8 +53,37 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
+      <h4 style="color:#fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus consequat erat, non
+        cursus purus
+        interdum nec. Vestibulum vitae est blandit, mollis elit eu, dignissim justo. Vestibulum nisi tortor, tristique
+        nec porttitor facilisis, pharetra non tellus. Sed sagittis et nibh vitae lacinia. Proin eleifend felis et augue
+        cursus blandit. Duis pulvinar bibendum turpis eu fringilla. Etiam tincidunt quam sapien, id consequat est
+        aliquam nec. Quisque non urna vehicula, posuere nulla et, bibendum nulla. Nunc leo justo, placerat eu elit
+        malesuada, sodales eleifend tortor. Suspendisse ligula urna, elementum vitae euismod non, maximus vel purus. Nam
+        et erat velit. In fringilla blandit gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+        posuere cubilia curae; Sed in lorem vitae lorem eleifend hendrerit. Nam pretium scelerisque ex. Nunc sapien
+        justo, consectetur ac bibendum sed, porta a tellus.</h4>
 
       <style>
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #343434;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #36454F;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #28282B;
+        }
+
         .sidenav {
           height: 100%;
           width: 0;
@@ -68,7 +98,7 @@
         }
 
         button {
-          background-color: rgb(123, 45, 67);
+          background-color: #36454F;
           color: white;
           border: none;
           padding: 10px 2.3px;
@@ -77,7 +107,7 @@
 
         button:hover {
           background-color: white;
-          color: rgb(255,255,255);
+          color: rgb(255, 255, 255);
         }
 
         .sidenav a {
@@ -117,7 +147,7 @@
         }
 
         .btn {
-          background-color: rgb(123, 45, 67);
+          background-color: #36454F;
           border: none;
           color: white;
           padding: 12px 16px;
@@ -126,7 +156,7 @@
         }
 
         .btn:hover {
-          background-color: rgb(123, 45, 67);
+          background-color: #343434;
         }
 
         body {
@@ -154,6 +184,7 @@
           padding: 50px;
           width: 100%;
           text-align: center;
+          border-radius: 25px;
 
         }
 
@@ -229,7 +260,7 @@
 
         .prev:hover,
         .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
+          background-color: rgb(0, 0, 0, 0.8);
         }
 
 
@@ -283,12 +314,42 @@
           }
         }
 
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+        }
+
+
+        .fa:hover {
+          opacity: 0.7;
+        }
+
+
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+
+        .fa-instagram {
+          background: #FF00FF;
+          color: white;
+        }
+
+        .fa-youtube {
+          background: red;
+          color: rgb(255, 255, 255);
+        }
+
         footer {
           background-color: #333;
           color: #fff;
           padding: 20px;
           text-align: center;
           width: 100%;
+          border-radius: 25px;
         }
       </style>
       <script>
@@ -355,7 +416,12 @@
 
 
       </script>
-      <footer style="background-color: rgb(123, 45, 67); color: #fff;">
+      <footer style="background-color: #36454F; color: #fff;">
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="www.facebook.com" class="fa fa-facebook"></a>
+        <a href="www.instagram.com" class="fa fa-instagram"></a>
+        <a href="www.youtube.com" class="fa fa-youtube"></a>
         <p>&copy; 2023. Tutti i diritti riservati a me.</p>
       </footer>
   </body>
