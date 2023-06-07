@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <input type="text" name="search" placeholder="Cerca..">
@@ -16,15 +17,15 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="imgs/Logo.png" type="image/x-icon">
-  </head>
-
-  <body bgcolor="#0000">
-    <header style="background-color: #36454F; color: #fff;">
-      <h1>Concessionario: Carroziere</h1>
+    <header style="color: #fff;">
+      <h2>Concessionario: Carroziere</h2>
       <h4>Se cerchi eleganza e potenza sei nel posto giusto</h4>
 
       <span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span>
     </header>
+  </head>
+
+  <body bgcolor="#0000">
     <section>
       <div class="slideshow-container">
 
@@ -71,7 +72,7 @@
 
 
         <h1 style="color:#fff">Vieni a trovarci:</h1>
-        <div class="dealer">
+        <div class="google-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5105.755612510018!2d72.85485672248623!3d19.100787557198185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sit!2sit!4v1685972983900!5m2!1sit!2sit"
             width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
@@ -95,8 +96,18 @@
           color: #f1f1f1;
         }
 
-        .dealer {
+        .google-map {
           background-image: url(imgs/dealership.jpg);
+          padding-bottom: 50%;
+          position: relative;
+        }
+
+        .google-map iframe {
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+          position: absolute;
         }
 
         .map {
@@ -185,7 +196,7 @@
         }
 
         .btn {
-          background-color: #36454F;
+          background-color: #0000;
           border: none;
           color: white;
           padding: 12px 16px;
@@ -194,7 +205,7 @@
         }
 
         .btn:hover {
-          background-color: #343434;
+          background-color: #0000;
         }
 
         body {
@@ -217,7 +228,7 @@
         }
 
         header {
-          background-color: #333;
+
           color: #fff;
           padding: 50px;
           width: 100%;
@@ -383,7 +394,7 @@
         }
 
         footer {
-          background-color: #333;
+          background-color: #0000;
           color: #fff;
           padding: 20px;
           text-align: center;
@@ -453,7 +464,7 @@
           location.reload();
         }
       </script>
-      <footer style="background-color: #36454F; color: #fff;">
+      <footer style="background-color: #0000; color: #fff;">
         <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <a href="www.facebook.com" class="fa fa-facebook"></a>
