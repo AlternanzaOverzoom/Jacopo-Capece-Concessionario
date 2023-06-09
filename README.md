@@ -30,4 +30,4 @@ Il sito web fa uso della libreria Font Awesome per le icone.
 
 ## Contatti
 
-Per ulteriori informazioni contattatemi sulla mia mail personale [capecej9@gmail.com](capecej9@gmail.com).
+Per ulteriori informazioni contattatemi sulla mia mail personale [capecej9@gmail.com](capecej9@gmail.com)
